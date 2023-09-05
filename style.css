@@ -1,673 +1,699 @@
-
-    * {
-        margin: 0;
-        font-family: 'Nunito', sans-serif;
-    }
-
-    header {
-        background-color: rgb(225, 225, 225);
-        height: 20vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    header div {
-        width: 80%;
-        height: 20vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header img {
-        height: 50%;
-    }
-
-    header div ul {
-        list-style: none;
-        display: flex;
-
-    }
-
-    header div li {
-        margin-left: 20px;
-        /* Optional: Add some spacing between the list items */
-        font-family: 'Nunito', sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.5em;
-        ;
-        cursor: default;
-    }
-
-    header li:hover{
-        cursor: pointer;
-    }
-
-    
-    a:link {
-        color: black;
-        text-decoration: none;
-    }
-
-    a:visited {
-        color: black;
-        text-decoration: none;
-    }
-
-    main {
-        min-height: 600vh;
-        height: fit-content;
-        background-color: rgb(219, 230, 210);
-    }
-
-    .p1 {
-        display: flex;
-        height: 100vh;
-    }
-
-    .p3 {
-        display: flex;
-        height: 100vh;
-    }
-
-    .p1-left {
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        padding-top: 100px;
-    }
-
-    .p2-right,
-    .p4-right {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        padding-top: 100px;
-        padding-right: 100px;
-    }
-
-    .p3-left {
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        padding-top: 100px;
-        padding-left: 300px;
-    }
-
-    .p1-left section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 30vh;
-    }
-
-    .p3-left section {
-        display: flex;
-        justify-content: center;
-        height: 30vh;
-        flex-direction: column;
-    }
-
-    .p1-left section h1 {
-        margin-left: 200px;
-        color: #0D1A10;
-        font-size: 60px;
-        font-weight: 700;
-    }
-
-    .p3-left section h1 {
-        font-size: 36px;
-        font-weight: 900;
-        margin-bottom: 20px;
-        width: 350px;
-    }
-
-    .p1-left div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 20vh;
-    }
-
-    .p3-left div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 20vh;
-    }
-
-    .p1-left div p {
-        font-size: 20px;
-        margin-left: 200px;
-    }
-
-    .p3-left div p {
-        font-size: 20px;
-    }
-
-    .p1-right {
-        width: 60%;
-        padding-left: 200px;
-        padding-top: 50px;
-    }
-
-    .p3-right {
-        width: 60%;
-        padding-left: 120px;
-        padding-top: 50px;
-    }
-
-    .p2-left {
-        width: 50%;
-        padding-left: 200px;
-        padding-top: 100px;
-    }
-
-    .p4-left {
-        width: 50%;
-        padding-left: 200px;
-        padding-top: 100px;
-    }
-
-
-    .p1-right img {
-        width: 70%;
-        border-radius: 50%;
-        z-index: 2;
-        position: relative;
-
-    }
-
-    .p3-right img {
-        width: 70%;
-        border-radius: 50%;
-        z-index: 2;
-        position: relative;
-
-    }
-
-
-    .p3-left section h6 {
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 20px;
-    }
-
-    .brown {
-        min-height: 10px;
-        min-width: 10px;
-        background-color: #243328;
-        border-radius: 50%;
-        position: absolute;
-    }
-
-    .c1 {
-        width: 170px;
-        height: 170px;
-        transform: translate(0, -40px);
-    }
-
-    .c2 {
-        width: 100px;
-        height: 100px;
-        transform: translate(-80px, 400px);
-    }
-
-    .p2 {
-        display: flex;
-        height: 100vh;
-    }
-
-    .p2-left img {
-        width: 80%;
-        border-radius: 50%;
-        z-index: 2;
-        position: relative;
-    }
-
-    .p2-right h6 {
-        font-size: 14px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-
-    .p2-right h1 {
-        font-size: 36px;
-        font-weight: 900;
-        margin-bottom: 20px;
-        width: 300px;
-    }
-
-    .p2-right div p {
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        width: 350px;
-    }
-
-    .p4 {
-        display: flex;
-        height: 100vh;
-    }
-
-    .p4-left img {
-        width: 80%;
-        border-radius: 50%;
-        z-index: 2;
-        position: relative;
-    }
-
-    .p4-right h6 {
-        font-size: 14px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-
-    .p4-right h1 {
-        font-size: 36px;
-        font-weight: 900;
-        margin-bottom: 20px;
-        width: 300px;
-    }
-
-    .p4-right div p {
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        width: 350px;
-    }
-
-    .p5 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 100px;
-    }
-
-    .p5 h1 {
-        font-size: 36px;
-        font-weight: 700;
-        margin: 20px;
-    }
-
-    .p5 p {
-        width: 50%;
-        margin: 20px;
-        font-size: 18px;
-        font-weight: 400;
-        text-align: center;
-    }
-
-    .p6 {
-        display: flex;
-        background-color: #243328;
-        justify-content: center;
-        align-items: center;
-        padding: 120px;
-    }
-
-    .p6 h3 {
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.2em;
-        color: white;
-    }
-
-    .p7 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 80px;
-    }
-
-    .p7 h1 {
-        font-size: 48px;
-        font-weight: 700;
-    }
-
-    .p7 form {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 20px;
-    }
-
-    .p7 form label,
-    .p7 form input,
-    .p7 form textarea {
-        width: 40vw;
-    }
-
-    .p7 form label {
-        font-size: 16px;
-        font-weight: 600;
-        margin-bottom: 10px;
-
-    }
-
-    .p7 form input {
-        height: 50px;
-        margin-bottom: 30px;
-        color: black;
-        font-weight: 700
-    }
-
-    .p7 form textarea {
-        color: black;
-        font-weight: 700
-    }
-
-    #submit {
-        background-color: #2E994D;
-        padding: 10px;
-        color: #FFFFFF;
-        font-size: 18px;
-        font-family: Inter;
-        font-weight: 700;
-        border-radius: 4px;
-        border-width: 0px;
-        background-color: #2E994D;
-        width: 120px;
-        border-color: rgba(0, 0, 0, 0);
-        transition: all 0.15s;
-    }
-
-    #submit:hover {
-        cursor: pointer;
-        background-color: rgb(26, 26, 26);
-    }
-
-    footer{
-        background-color: #EBEADF;
-        display: flex;
-        justify-content: space-between;
-        padding: 100px;
-    }
-
-    .name{
-        font-size: 34px;
-        color: #0D1A10;
-        font-weight: 900;
-    }
-
-    .icons{
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-    }
-
-    .icons a:hover{
-        cursor: pointer;
-    }
-
-    .icons a{
-        text-decoration: none;
-        color: #0D1A10;
-    }
-    /* Define the animation properties */
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    /* Set the initial opacity to 0 to hide the sections before the animation starts */
-    .part:not(.animate-fadeInUp) {
-        opacity: 0;
-    }
-
-    /* Apply the animation class to elements */
-    .p1.animate-fadeInUp,
-    .p2.animate-fadeInUp,
-    .p3.animate-fadeInUp,
-    .p4.animate-fadeInUp,
-    .p5.animate-fadeInUp,
-    .p6.animate-fadeInUp,
-    .p7.animate-fadeInUp,
-    footer.animate-fadeInUp {
-        animation: fadeInUp 1s ease-in;
-    }
-
-  
-    body {
-        margin: 0;
-        font-family: 'Nunito', sans-serif;
-    }
-
-    header {
-        background-color: rgb(225, 225, 225);
-        height: 20vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    header div {
-        width: 80%;
-        height: 20vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header img {
-        height: 50%;
-    }
-
-    header div ul {
-        list-style: none;
-        display: flex;
-    }
-
-    header div li {
-        margin-left: 20px;
-        /* Optional: Add some spacing between the list items */
-        font-family: 'Nunito', sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.5em;
-        cursor: default;
-    }
-
-    .portfolio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 70px;
-        font-size: 30px;
-        font-weight: 700;
-        padding-bottom: 70px;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 3fr);
-        gap: 10px;
-
-        margin: 0 auto;
-    }
-
-    /* Slide-in from the left animation for the first column item */
-    .grid-container div:nth-child(1) {
-        animation: slideInFromLeft 1s ease-in
-    }
-
-    .grid-container div:nth-child(4) {
-        animation: slideInFromLeft 1.25s ease-in
-    }
-
-    .grid-container div:nth-child(7) {
-        animation: slideInFromLeft 1.5s ease-in
-    }
-
-    .grid-container div:nth-child(10) {
-        animation: slideInFromLeft 1.75s ease-in;
-    }
-
-    /* Slide-in from the right animation for the last column item */
-    .grid-container div:nth-child(2) {
-        animation: slideInFromMiddle 1s ease-in;
-    }
-
-    .grid-container div:nth-child(5) {
-        animation: slideInFromMiddle 1.25s ease-in;
-    }
-
-    .grid-container div:nth-child(8) {
-        animation: slideInFromMiddle 1.5s ease-in;
-    }
-
-    .grid-container div:nth-child(11) {
-        animation: slideInFromMiddle 1.75s ease-in;
-
-    }
-
-    /* Slide-in from the middle animation for the middle column items */
-    .grid-container div:nth-child(3) {
-        animation: slideInFromRight 1s ease-in;
-    }
-
-    .grid-container div:nth-child(6) {
-        animation: slideInFromRight 1.25s ease-in;
-    }
-
-    .grid-container div:nth-child(9) {
-        animation: slideInFromRight 1.5s ease-in;
-    }
-
-    .slide-in-left {
-        animation: slideInFromLeft 1s ease-in;
-    }
-
-    .slide-in-right {
-        animation: slideInFromRight 1s ease-in;
-    }
-
-    .slide-in-middle {
-        animation: slideInFromMiddle 1s ease-in;
-    }
-
-    @keyframes slideInFromLeft {
-        from {
-            transform: translateX(-100%);
-            opacity: 0;
-        }
-
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-
-    @keyframes slideInFromRight {
-        from {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-
-    @keyframes slideInFromMiddle {
-        from {
-            transform: translateY(50%);
-            opacity: 0;
-        }
-
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
-
-    .grid-container div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 1fr;
-        /* Set the width of each grid item to 1 fraction */
-        height: auto;
-        /* Set the height of each grid item to fit the content (the height of the image) */
-    }
-
-    .grid-container img {
-        max-width: 100%;
-        /* Limit the image width to the size of the grid item */
-        max-height: 300px;
-        /* Set a maximum height of 300 pixels for each image */
-    }
-
-
-    .grid-container img {
-        width: 300px;
-        height: 300px;
-    }
-
-
-    footer {
-        background-color: #EBEADF;
-        display: flex;
-        justify-content: space-between;
-        padding: 100px;
-    }
-
-    .name {
-        font-size: 34px;
-        color: #0D1A10;
-        font-weight: 900;
-    }
-
-    .icons {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-    }
-
-    .icons a:hover {
-        cursor: pointer;
-    }
-
-    .icons a {
-        text-decoration: none;
-        color: #0D1A10;
-    }
-
-    .portfolio.animate-fadeInUp,
-    footer.animate-fadeInUp {
-        animation: fadeInUp 1s ease-in;
-    }
-
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-
-.online-main{
-    height: 50vh;
+* {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: rgb(219, 230, 210);
+}
+
+header {
+    background-color: rgb(225, 225, 225);
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 60px;
-    font-weight: bold;
 }
 
- 
+header div {
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50%;
+}
+
+header div ul {
+    list-style: none;
+    display: flex;
+
+}
+
+header div li {
+    margin-left: 20px;
+    font-family: Nunito, sans-serif;
+    font-size: 25px;
+    text-underline-offset: 11px;
+    font-weight: 400;
+    line-height: 1.5em;
+    cursor: default;
+}
+
+header li:hover {
+    cursor: pointer;
+}
+
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    min-height: 600vh;
+    height: fit-content;
+    background-color: rgb(219, 230, 210);
+}
+
+.p1 {
+    display: flex;
+    height: 100vh;
+}
+
+.p3 {
+    display: flex;
+    height: 100vh;
+}
+
+.p1-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.p2-right,
+.p4-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-right: 100px;
+}
+
+.p3-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 300px;
+}
+
+.p1-left section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.p3-left section {
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    flex-direction: column;
+}
+
+.p1-left section h1 {
+    margin-left: 200px;
+    color: #0D1A10;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.p3-left section h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    width: 350px;
+}
+
+.p1-left div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.p3-left div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.p1-left div p {
+    font-size: 20px;
+    margin-left: 200px;
+}
+
+.p3-left div p {
+    font-size: 20px;
+}
+
+.p1-right {
+    width: 60%;
+    padding-left: 200px;
+    padding-top: 50px;
+}
+
+.p3-right {
+    width: 60%;
+    padding-left: 120px;
+    padding-top: 50px;
+}
+
+.p2-left {
+    width: 50%;
+    padding-left: 200px;
+    padding-top: 100px;
+}
+
+.p4-left {
+    width: 50%;
+    padding-left: 200px;
+    padding-top: 100px;
+}
+
+
+.p1-right img {
+    width: 70%;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+
+}
+
+.p3-right img {
+    width: 70%;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+
+}
+
+
+.p3-left section h6 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.brown {
+    min-height: 10px;
+    min-width: 10px;
+    background-color: #243328;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.c1 {
+    width: 170px;
+    height: 170px;
+    transform: translate(0, -40px);
+}
+
+.c2 {
+    width: 100px;
+    height: 100px;
+    transform: translate(-80px, 400px);
+}
+
+.p2 {
+    display: flex;
+    height: 100vh;
+}
+
+.p2-left img {
+    width: 80%;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+}
+
+.p2-right h6 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.p2-right h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.p2-right div p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    width: 350px;
+}
+
+.p4 {
+    display: flex;
+    height: 100vh;
+}
+
+.p4-left img {
+    width: 80%;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+}
+
+.p4-right h6 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.p4-right h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.p4-right div p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    width: 350px;
+}
+
+.p5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.p5 h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.p5 p {
+    width: 50%;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.p6 {
+    display: flex;
+    background-color: #243328;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+}
+
+.p6 h3 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: white;
+}
+
+.p7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.p7 h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.p7 form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.p7 form label,
+.p7 form input,
+.p7 form textarea {
+    width: 40vw;
+}
+
+.p7 form label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.p7 form input {
+    height: 50px;
+    margin-bottom: 30px;
+    color: black;
+    font-weight: 700
+}
+
+.p7 form textarea {
+    color: black;
+    font-weight: 700
+}
+
+#submit {
+    background-color: #2E994D;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 700;
+    border-radius: 4px;
+    border-width: 0px;
+    background-color: #2E994D;
+    width: 120px;
+    border-color: rgba(0, 0, 0, 0);
+    transition: all 0.15s;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: rgb(26, 26, 26);
+}
+
+footer {
+    background-color: #EBEADF;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.name {
+    font-size: 34px;
+    color: #0D1A10;
+    font-weight: 900;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.icons a:hover {
+    cursor: pointer;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #0D1A10;
+}
+
+/* Define the animation properties */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Set the initial opacity to 0 to hide the sections before the animation starts */
+.part:not(.animate-fadeInUp) {
+    opacity: 0;
+}
+
+/* Apply the animation class to elements */
+.p1.animate-fadeInUp,
+.p2.animate-fadeInUp,
+.p3.animate-fadeInUp,
+.p4.animate-fadeInUp,
+.p5.animate-fadeInUp,
+.p6.animate-fadeInUp,
+.p7.animate-fadeInUp,
+footer.animate-fadeInUp {
+    animation: fadeInUp 1s ease-in;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    background-color: rgb(225, 225, 225);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div {
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50%;
+}
+
+header div ul {
+    list-style: none;
+    display: flex;
+}
+
+header div li {
+    margin-left: 20px;
+    /* Optional: Add some spacing between the list items */
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5em;
+    cursor: default;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 70px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 10px;
+
+    margin: 0 auto;
+}
+
+/* Slide-in from the left animation for the first column item */
+.grid-container div:nth-child(1) {
+    animation: slideInFromLeft 1s ease-in
+}
+
+.grid-container div:nth-child(4) {
+    animation: slideInFromLeft 1.25s ease-in
+}
+
+.grid-container div:nth-child(7) {
+    animation: slideInFromLeft 1.5s ease-in
+}
+
+.grid-container div:nth-child(10) {
+    animation: slideInFromLeft 1.75s ease-in;
+}
+
+/* Slide-in from the right animation for the last column item */
+.grid-container div:nth-child(2) {
+    animation: slideInFromMiddle 1s ease-in;
+}
+
+.grid-container div:nth-child(5) {
+    animation: slideInFromMiddle 1.25s ease-in;
+}
+
+.grid-container div:nth-child(8) {
+    animation: slideInFromMiddle 1.5s ease-in;
+}
+
+.grid-container div:nth-child(11) {
+    animation: slideInFromMiddle 1.75s ease-in;
+
+}
+
+/* Slide-in from the middle animation for the middle column items */
+.grid-container div:nth-child(3) {
+    animation: slideInFromRight 1s ease-in;
+}
+
+.grid-container div:nth-child(6) {
+    animation: slideInFromRight 1.25s ease-in;
+}
+
+.grid-container div:nth-child(9) {
+    animation: slideInFromRight 1.5s ease-in;
+}
+
+.slide-in-left {
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.slide-in-right {
+    animation: slideInFromRight 1s ease-in;
+}
+
+.slide-in-middle {
+    animation: slideInFromMiddle 1s ease-in;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromMiddle {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.grid-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1fr;
+    /* Set the width of each grid item to 1 fraction */
+    height: auto;
+    /* Set the height of each grid item to fit the content (the height of the image) */
+}
+
+.grid-container img {
+    max-width: 100%;
+    /* Limit the image width to the size of the grid item */
+    max-height: 300px;
+    /* Set a maximum height of 300 pixels for each image */
+}
+
+
+.grid-container img {
+    width: 300px;
+    height: 300px;
+}
+
+
+footer {
+    background-color: #EBEADF;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.name {
+    font-size: 34px;
+    color: #0D1A10;
+    font-weight: 900;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.icons a:hover {
+    cursor: pointer;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #0D1A10;
+}
+
+.portfolio.animate-fadeInUp,
+footer.animate-fadeInUp {
+    animation: fadeInUp 1s ease-in;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.product {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: auto;
+    height: 24rem;
+    margin-right: 20px;
+}
+
+.product-info {
+    width: 45%;
+    /* flex: 1; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
